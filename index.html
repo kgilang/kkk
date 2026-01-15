@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keuangan RT</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+header {
+  background: linear-gradient(135deg,#2563eb,#1e40af);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+th {
+  background: #f3f4f6;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+}
+
+.paid { background: #16a34a; }
+.unpaid { background: #dc2626; }
+
+@media(max-width:600px){
+  th, td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Dashboard Keuangan RT 05</h2>
+  <p>Periode: Juli 2025</p>
+</header>
+
+<div class="container">
+
+<div class="cards">
+  <div class="card">
+    <h3>Saldo Awal</h3>
+    <p>Rp 5.000.000</p>
+  </div>
+  <div class="card">
+    <h3>Total Pemasukan</h3>
+    <p>Rp 2.400.000</p>
+  </div>
+  <div class="card">
+    <h3>Total Pengeluaran</h3>
+    <p>Rp 1.350.000</p>
+  </div>
+  <div class="card">
+    <h3>Saldo Akhir</h3>
+    <p>Rp 6.050.000</p>
+  </div>
+</div>
+
+<h3>💳 Iuran Warga</h3>
+<table>
+<tr>
+  <th>Nama</th>
+  <th>Bulan</th>
+  <th>Jumlah</th>
+  <th>Status</th>
+</tr>
+<tr>
+  <td>Budi</td>
+  <td>Juli</td>
+  <td>Rp 100.000</td>
+  <td><span class="badge paid">Lunas</span></td>
+</tr>
+<tr>
+  <td>Siti</td>
+  <td>Juli</td>
+  <td>Rp 100.000</td>
+  <td><span class="badge unpaid">Belum</span></td>
+</tr>
+<tr>
+  <td>Agus</td>
+  <td>Juli</td>
+  <td>Rp 100.000</td>
+  <td><span class="badge paid">Lunas</span></td>
+</tr>
+</table>
+
+<h3>📑 Mutasi Keuangan</h3>
+<table>
+<tr>
+  <th>Tanggal</th>
+  <th>Keterangan</th>
+  <th>Masuk</th>
+  <th>Keluar</th>
+  <th>Saldo</th>
+</tr>
+<tr>
+  <td>01 Jul</td>
+  <td>Saldo Awal</td>
+  <td>-</td>
+  <td>-</td>
+  <td>Rp 5.000.000</td>
+</tr>
+<tr>
+  <td>05 Jul</td>
+  <td>Iuran Warga</td>
+  <td>Rp 2.400.000</td>
+  <td>-</td>
+  <td>Rp 7.400.000</td>
+</tr>
+<tr>
+  <td>10 Jul</td>
+  <td>Kebersihan</td>
+  <td>-</td>
+  <td>Rp 750.000</td>
+  <td>Rp 6.650.000</td>
+</tr>
+<tr>
+  <td>15 Jul</td>
+  <td>Keamanan</td>
+  <td>-</td>
+  <td>Rp 600.000</td>
+  <td>Rp 6.050.000</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>
