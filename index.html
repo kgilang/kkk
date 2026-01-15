@@ -42,14 +42,14 @@ header {
 
 .card h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #6b7280;
 }
 
 .card p {
   font-size: 20px;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 table {
@@ -63,7 +63,6 @@ table {
 
 th, td {
   padding: 12px;
-  text-align: left;
   border-bottom: 1px solid #e5e7eb;
   font-size: 14px;
 }
@@ -90,15 +89,17 @@ th {
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <h2>Dashboard Keuangan RT 05</h2>
-  <p>Periode: Juli 2025</p>
+  <p>Periode Tahun 2025</p>
 </header>
 
 <div class="container">
 
+<!-- RINGKASAN -->
 <div class="cards">
   <div class="card">
     <h3>Saldo Awal</h3>
@@ -106,18 +107,45 @@ th {
   </div>
   <div class="card">
     <h3>Total Pemasukan</h3>
-    <p>Rp 2.400.000</p>
+    <p>Rp 17.000.000</p>
   </div>
   <div class="card">
     <h3>Total Pengeluaran</h3>
-    <p>Rp 1.350.000</p>
+    <p>Rp 6.950.000</p>
   </div>
   <div class="card">
     <h3>Saldo Akhir</h3>
-    <p>Rp 6.050.000</p>
+    <p>Rp 15.050.000</p>
+  </div>
+
+  <div class="card">
+    <h3>Iuran Januari</h3>
+    <p>Rp 2.000.000</p>
+  </div>
+  <div class="card">
+    <h3>Iuran Februari</h3>
+    <p>Rp 15.000.000</p>
   </div>
 </div>
 
+<!-- REKAP BULANAN -->
+<h3>📊 Rekap Iuran Bulanan</h3>
+<table>
+<tr>
+  <th>Bulan</th>
+  <th>Total Iuran</th>
+</tr>
+<tr>
+  <td>Januari</td>
+  <td>Rp 2.000.000</td>
+</tr>
+<tr>
+  <td>Februari</td>
+  <td>Rp 15.000.000</td>
+</tr>
+</table>
+
+<!-- IURAN WARGA -->
 <h3>💳 Iuran Warga</h3>
 <table>
 <tr>
@@ -128,25 +156,26 @@ th {
 </tr>
 <tr>
   <td>Budi</td>
-  <td>Juli</td>
+  <td>Februari</td>
   <td>Rp 100.000</td>
   <td><span class="badge paid">Lunas</span></td>
 </tr>
 <tr>
   <td>Siti</td>
-  <td>Juli</td>
+  <td>Februari</td>
   <td>Rp 100.000</td>
   <td><span class="badge unpaid">Belum</span></td>
 </tr>
 <tr>
   <td>Agus</td>
-  <td>Juli</td>
+  <td>Februari</td>
   <td>Rp 100.000</td>
   <td><span class="badge paid">Lunas</span></td>
 </tr>
 </table>
 
-<h3>📑 Mutasi Keuangan</h3>
+<!-- MUTASI -->
+<h3>📑 Mutasi Rekening</h3>
 <table>
 <tr>
   <th>Tanggal</th>
@@ -156,36 +185,43 @@ th {
   <th>Saldo</th>
 </tr>
 <tr>
-  <td>01 Jul</td>
+  <td>01 Jan</td>
   <td>Saldo Awal</td>
   <td>-</td>
   <td>-</td>
   <td>Rp 5.000.000</td>
 </tr>
 <tr>
-  <td>05 Jul</td>
-  <td>Iuran Warga</td>
-  <td>Rp 2.400.000</td>
+  <td>31 Jan</td>
+  <td>Iuran Januari</td>
+  <td>Rp 2.000.000</td>
   <td>-</td>
-  <td>Rp 7.400.000</td>
+  <td>Rp 7.000.000</td>
 </tr>
 <tr>
-  <td>10 Jul</td>
+  <td>28 Feb</td>
+  <td>Iuran Februari</td>
+  <td>Rp 15.000.000</td>
+  <td>-</td>
+  <td>Rp 22.000.000</td>
+</tr>
+<tr>
+  <td>05 Mar</td>
   <td>Kebersihan</td>
   <td>-</td>
-  <td>Rp 750.000</td>
-  <td>Rp 6.650.000</td>
+  <td>Rp 3.500.000</td>
+  <td>Rp 18.500.000</td>
 </tr>
 <tr>
-  <td>15 Jul</td>
+  <td>10 Mar</td>
   <td>Keamanan</td>
   <td>-</td>
-  <td>Rp 600.000</td>
-  <td>Rp 6.050.000</td>
+  <td>Rp 3.450.000</td>
+  <td>Rp 15.050.000</td>
 </tr>
 </table>
 
 </div>
 
 </body>
-</html>
+  </html>
